@@ -2,9 +2,7 @@
 
 const fs = require('fs');
 
-const files = ['./data.txt','./extra-data.txt','./more-data.txt'];
-
-const printFiles = module.exports = (paths, callback) => {
+module.exports = (paths, callback) => {
 
   let contents = [];
 
@@ -19,10 +17,8 @@ const printFiles = module.exports = (paths, callback) => {
       fs.readFile(paths[2], (err,data) => {
         if (err) throw err;
         contents.push(data.toString());
-        callback(null, contents)
+        callback(null, contents);
       });
     });
   });
 };
-
-printFiles(files);
