@@ -1,0 +1,12 @@
+{
+  "name": "lab-fortunato",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC"
+}
