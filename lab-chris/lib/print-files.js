@@ -3,25 +3,25 @@
 const fs = require('fs');
 
 module.exports = (callback) => {
+  let dataArray = [];
+  let pathArray = ['./data/0.txt','./data/1.txt','./data/2.txt'];
 
-  let pathArray = [];
-
-  fs.readFile('./data/0.txt', (err, data) => {
+  fs.readFile(pathArray[0], (err, data) => {
     if(err)
       return console.error(err);
-    pathArray.push(data.toString());
+    dataArray.push(data.toString());
 
-    fs.readFile('./data/1.txt', (err, data) => {
+    fs.readFile(pathArray[1], (err, data) => {
       if(err)
         return console.log(err);
-      pathArray.push(data.toString());
+      dataArray.push(data.toString());
 
 
-      fs.readFile('./data/2.txt', (err, data) => {
+      fs.readFile(pathArray[2], (err, data) => {
         if(err)
           return console.log(err);
-        pathArray.push(data.toString());
-        callback(pathArray);
+        dataArray.push(data.toString());
+        callback(dataArray);
       });
     });
   });
