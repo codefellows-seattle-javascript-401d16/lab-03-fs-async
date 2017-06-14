@@ -2,28 +2,25 @@
 
 const fs = require('fs');
 
-const paths = ['./lib/file1','./lib/file2','./lib/file3'];
-
-module.exports = (paths,callback) => {
+module.exports = (path, callback) => {
+  // const fileArray = ['file1', 'file2', 'file3'];
   const fileContents = [];
-  fs.readFile(paths[0], (err,data) => {
+  fs.readFile(path[0], (err, data) => {
     if (err) {
       return callback(err);
     }
     fileContents.push(data.toString());
-    fs.readFile(paths[1], (err,data) => {
+    fs.readFile(path[1], (err, data) => {
       if (err) {
         return callback(err);
       }
       fileContents.push(data.toString());
-      fs.readFile(paths[2], (err,data) => {
+      fs.readFile(path[2], (err, data) => {
         if (err) {
           return callback(err);
         }
         fileContents.push(data.toString());
-        console.log(fileContents);
-        callback(null,fileContents);
-        return fileContents;
+        callback(null, fileContents);
       });
     });
   });

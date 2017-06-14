@@ -2,4 +2,9 @@
 
 const printFile = require('./lib/print-files.js');
 
-console.log(printFile.fpArray);
+printFile(process.argv.slice(2), (err, data) => {
+  if (err) {
+    console.error(err);
+  }
+  console.log(data.toString());
+});
