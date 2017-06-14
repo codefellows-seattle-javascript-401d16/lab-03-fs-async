@@ -1,0 +1,28 @@
+{
+  "name": "lab-michaelm",
+  "version": "1.0.0",
+  "description": "![cf](https://i.imgur.com/7v5ASc8.png) lab-02-tools-and-context ======",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adutchguy/lab-02-tools-and-context.git"
+  },
+  "author": "mdm_8@hotmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Adutchguy/lab-02-tools-and-context/issues"
+  },
+  "homepage": "https://github.com/Adutchguy/lab-02-tools-and-context#readme",
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "mocha": "^3.4.2"
+  }
+}
