@@ -16,20 +16,20 @@ printFiles.readFile = function() {
     if(err)
       throw(err);
     console.log(data);
-  });
 
-  fs.readFile(arrayPaths[1],(err, data) => {
-    if(err)
-      throw(err);
-    console.log(data);
-  });
+    fs.readFile(arrayPaths[1],(err, data) => {
+      if(err)
+        throw(err);
+      console.log(data);
 
-  fs.readFile(arrayPaths[3],(err, data) => {
-    if(err)
-      throw(err);
-    console.log(data);
+      fs.readFile(arrayPaths[3],(err, data) => {
+        if(err)
+          throw(err);
+        console.log(data);
+
+      });
+    });
   });
 };
 
 printFiles.readFile();
-console.log('started reading file');
