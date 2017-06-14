@@ -2,4 +2,6 @@
 
  const readFile = require('./lib/print-files.js');
 
-readFile();
+readFile(process.argv, (err, data) =>{
+  
+});
