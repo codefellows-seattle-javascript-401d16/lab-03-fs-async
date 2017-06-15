@@ -1,8 +1,8 @@
 'use-strict';
 
-const printFile = require('./lib/print-files.js');
+const print = require('./lib/print-files.js');
 
-printFile(process.argv.slice(2), (err, data) => {
+print(process.argv.slice(2), (err, data) => {
   if (err) {
     console.error(err);
   }
