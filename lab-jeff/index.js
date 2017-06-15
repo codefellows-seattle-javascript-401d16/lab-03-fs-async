@@ -1,7 +1,9 @@
 'use strict';
 
-const printFiles = require('./lib/print-files.js');
+let printFiles = require('./lib/print-files.js');
 
-printFiles(function (result) {
-  console.log(result);
+printFiles(process.argv.slice(2), (err, data) => {
+  if(err)
+    return console.error(err);
+  console.log(data);
 });
