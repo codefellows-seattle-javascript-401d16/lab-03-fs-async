@@ -6,7 +6,7 @@ var paths = process.argv.splice(2);
 
 print(paths, (err, data) => {
   if (err) {
-    console.log(err);
+    console.error(err);
   }
   else {
     console.log(data);
