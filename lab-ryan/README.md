@@ -31,7 +31,7 @@
 
 # Documentation
 * Write a description of your code in your readme
-**/Description - I wrote a function that takes an array of three file paths and a callback and uses fs.readFile to log the data in the console as a string./**
+**Description - I wrote a function that takes an array of three file paths and a callback and uses fs.readFile to log the data in the console as a string.**
 
 ## Bonus 2pts
 * Write tests that guarantee that the files are logged in order.
