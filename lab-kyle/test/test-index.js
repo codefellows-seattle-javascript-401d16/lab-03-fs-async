@@ -12,7 +12,7 @@ describe('test logPrintFiles', () => {
   });
 
   it('should return first file. second file. third file.', () => {
-    expect(index()).toEqual('something');
+    expect(index.logPrintFiles()).toEqual('first file. second file. third file.');
   });
 
   after(() => process.argv = originalArgv);

@@ -2,7 +2,9 @@
 
 const printFiles = require('./lib/print-files.js');
 
-let logPrintFiles = module.exports = () => {
+const index = module.exports = {};
+
+index.logPrintFiles = () => {
   let list = process.argv.slice(2);
   printFiles(list, (err, data) => {
     if(err) {
@@ -16,4 +18,4 @@ let logPrintFiles = module.exports = () => {
   });
 };
 
-logPrintFiles();
+index.logPrintFiles();
