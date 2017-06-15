@@ -30,7 +30,6 @@
   * (your console.log should be  in the index.js file not in your print-files function)
 
 # Documentation
-* Write a description of your code in your readme
 **Description - I wrote a function that takes an array of three file paths and a callback and uses fs.readFile to log the data in the console as a string.**
 
 ## Bonus 2pts
