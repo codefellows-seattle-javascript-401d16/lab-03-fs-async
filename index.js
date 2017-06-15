@@ -2,6 +2,8 @@
 
 const print = require('./lib/print-files.js');
 
-print(results => {
-  console.log(results);
+print(process.argv.splice(2), (err, data)=> {
+  if(err)
+    console.error(err);
+  console.log(data);
 });
