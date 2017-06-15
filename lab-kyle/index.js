@@ -9,8 +9,7 @@ let logPrintFiles = module.exports = () => {
       console.log(err);
       return err;
     } else {
-      let results = data.map(item => item.toString());
-      results = results.join(' ');
+      let results = data.map(item => item.toString()).join(' ');
       console.log(results);
       return results;
     }
