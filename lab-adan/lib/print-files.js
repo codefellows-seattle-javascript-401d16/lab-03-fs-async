@@ -2,22 +2,22 @@
 
 const fs = require('fs');
 
-module.exports = (paths, callback) => {
-  fs.readFile('./lib/file-1.txt', (err, data) => {
+module.exports = (path, callback) => {
+  let results = [];
+  fs.readFile(path[0], (err, data) => {
     if(err)
     return callback(err);
-    console.log('hello', data.toString());
-
-    fs.readFile('./lib/file-2.txt', (err, data) => {
+    results.push(data.toString());
+    fs.readFile(path[1], (err, data) => {
       if(err)
       return callback(err);
-      console.log('world', data.toString());
-
-      fs.readFile('./lib/file-3.txt', (err, data) => {
+      results.push(data.toString());
+      fs.readFile(path[2], (err, data) => {
         if(err)
         return callback(err);
-        console.log('lolwut', data.toString());
+        results.push(data.toString());
+        callback(results);
       });
     });
   });
-}
+};

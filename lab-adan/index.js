@@ -1,7 +1,9 @@
 'use strict';
 
- const readFile = require('./lib/print-files.js');
+ let readFile = require('./lib/print-files.js');
 
-readFile(process.argv, (err, data) =>{
-  
-});
+  readFile(process.argv.slice(2), (err, data) => {
+    if(err)
+      return console.error(err);
+    console.log(data);
+  });
