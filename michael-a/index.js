@@ -1,17 +1,13 @@
 'use strict';
 
 
-const fs = require('fs');
+const pf = require('.lib/print-files.js');
 
-
-fs.readFile('./fs-demo.js', (err, data) => {
-  if(err)
-    return console.error(err);
-  console.log('booyea', data.toString());
-
-  fs.readFile('./data/0.txt', (err, data) => {
-    if(err)
-      return console.log(err);
-    console.log('sweeet', data.toString());
+const printFiles = module.exports = () => {
+  let files = pf(process.argv(2), (err, data) => {
+    data.map= (file) => {
+      console.log(file);
+    };
   });
-});
+  return files;
+};
