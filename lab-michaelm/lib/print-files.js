@@ -3,7 +3,6 @@
 const fs = require('fs');
 
 module.exports = (path, callback) => {
-  // const fileArray = ['file1', 'file2', 'file3'];
   const fileContents = [];
   fs.readFile(path[0], (err, data) => {
     if (err) {
