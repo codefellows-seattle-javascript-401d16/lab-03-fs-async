@@ -6,6 +6,6 @@
     * The content of each file is pushed to an array, fileData.
     * Once the third file is read and pushed to the array, the array is passed into the callback and subsequently logged when returned as 'data' to the index.js function and console.logged.
   * Tests
-   * Added test for ./lib/print-files.js, which checks for errors in three separate file paths and makes sure the returned array is in order.
-   * Added test for index.js, which checks that sample file paths can be passed into the CLI and return the file contents in order.
+    * Added test for ./lib/print-files.js, which checks for errors in three separate file paths and makes sure the returned array is in order.
+    * Added test for index.js, which checks that sample file paths can be passed into the CLI and return the file contents in order.
   * Project passes esLint.
