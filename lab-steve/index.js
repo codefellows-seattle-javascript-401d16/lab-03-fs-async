@@ -2,13 +2,17 @@
 
 const print = require('./lib/print-files.js');
 
-var paths = process.argv.splice(2);
+let paths = process.argv.splice(2);
 
-print(paths, (err, data) => {
-  if (err) {
-    console.error(err);
-  }
-  else {
-    console.log(data);
-  }
-});
+let main = module.exports = (paths, callback) => {
+  print(paths, (err, data) => {
+    if (err) {
+      console.error(err);
+    }
+    let result = data.join('\n');
+    console.log(result);
+    if (callback) callback(null, result);
+  });
+};
+
+main(paths);
