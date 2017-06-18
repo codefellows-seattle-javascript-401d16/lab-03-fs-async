@@ -1,0 +1,28 @@
+{
+  "name": "lab-03-fs-async",
+  "version": "1.0.0",
+  "description": "![cf](https://i.imgur.com/7v5ASc8.png) lab-03-fs-readfile ======",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vagabond0079/lab-03-fs-async.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vagabond0079/lab-03-fs-async/issues"
+  },
+  "homepage": "https://github.com/vagabond0079/lab-03-fs-async#readme",
+  "devDependencies": {
+    "eslint": "^4.0.0",
+    "expect": "^1.20.2",
+    "mocha": "^3.4.2"
+  }
+}
