@@ -11,17 +11,20 @@ printFiles.readFile = function(arrayPaths, callback) {
   fs.readFile(arrayPaths[0],(err, data) => {
     console.log(arrayPaths);
     if(err)
-      throw(err);
-    dataArray.push(data.toString());
+      return callback(new Error('paths must be an array'));
+
+    if(paths.length
+      )
+      dataArray.push(data.toString());
 
     fs.readFile(arrayPaths[1],(err, data) => {
       if(err)
-        throw(err);
+        return callback(err);
       dataArray.push(data.toString());
 
       fs.readFile(arrayPaths[2],(err, data) => {
         if(err)
-          throw(err);
+          return callback(err);
         dataArray.push(data.toString());
 
         callback(null, dataArray);
