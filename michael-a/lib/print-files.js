@@ -21,7 +21,6 @@ pf.print = (paths, callback) => {
           return callback(err);
         files.push(data.toString());
         callback(null, files);
-        // console.log(files);
       });
     });
   });

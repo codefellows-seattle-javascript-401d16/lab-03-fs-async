@@ -27,7 +27,7 @@
   * on failure pass and error in to the callback `callback(err)`-DONE
 * create an `index.js` that calls your function with three paths from process.argv -DONE
   and then logs the contents of the three files to the screen -DONE
-  * (your console.log should be  in the index.js file not in your print-files function)
+  * (your console.log should be  in the index.js file not in your print-files function)-DONE
 
 # Documentation
 * Write a description of your code in your readme
