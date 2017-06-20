@@ -11,12 +11,14 @@
 
 ## Configuration
 * Include the following files
+
 * README.md -DONE
 * .gitignore -DONE
 * .eslint-DONE
 * .eslintrc-DONE
 * .package.json-DONE
 * Add a test and lint script to your package.json -DONE
+
 
 ## Description:
 * create module `lib/print-files` with a function that takes an array of three filepaths and a callback -DONE
