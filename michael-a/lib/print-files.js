@@ -2,11 +2,10 @@
 
 const fs = require('fs');
 
+const pf = module.exports = {};
 
-
-module.exports = (paths, callback) => {
+pf.print = (paths, callback) => {
   let files = [];
-  paths = ['./file1.txt','./file2.txt','./file3.txt'];
   fs.readFile(paths[0], (err,data) => {
     if (err)
       return callback(err);
