@@ -1,8 +1,9 @@
-# Lab 02
+# Lab 03
 
 ## Functionality
-- one module that takes an array of file paths and a callback
-- print-files.js asynchronously reads the file paths, converts them to strings, then console logs them i na clalback
+- takes file paths as command line arguments
+- the files' contents parsed into strings and printed by the console
 
 ## Examples
-- print(['./file1.txt', './file2.txt', './file3.txt'], callback) console logs the contents of each file as a string
+- $ node index.js ./file1.txt ./file2.txt ./file3.txt
+- will print the contents of those files, 3 at a time
